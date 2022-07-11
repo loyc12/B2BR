@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww17380\viewh21680\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 PSWDS :\
+Disk = AHAkitty6?\
+User = LOLcat123@\
+Root = FUNNYpus4$\
+Test = Owo1337###\
+\
+PATHS :\
+/home/scripts/monitoring.sh	(script)\
+/etc/sudoers.d/sudoconfigs	(configs)\
+/var/log/sudologs			(logs)\
+/etc/ssh/sshd_config			(configs)\
+/etc/login.defs				(pswd rules 1)\
+/etc/pam.d/common-password	(pswd rules 2)\
+\
+\
+Why Debian :				\
+\
+Check Users :				awk -F: '\{print $1\}' /etc/passwd\
+Check Groups :				awk -F: '\{print $1\}' /etc/group\
+Check Users in Group :		awk \'91/[user name]/\{ print $0\}\'92 /etc/group\
+Check Groups of User :		groups\
+\
+Modify password policies :		sudo chage [user]\
+\
+Switch User :				su [user / -]\
+\
+Change psd :				passwd [user / -]\
+\
+Add User :				useradd [user name]\
+Add Group :				groupadd [group name]\
+Add User to Group :			sudo usermod -a -G [group name] [user name]\
+\
+Delete User :				sudo deluser [user name]\
+Delete Group :				sudo groupdel [group name]\
+Remove User from Group :	sudo gpasswd -d [user name] [group name]\
+\
+Check hostname :			hostnamectl\
+Modify hostname :			sudo hostnamectl set-hostname [host name]\
+\
+Check Partitions :			lsblk\
+\
+Check sudo :				sudo -l (???)\
+List rules :					\
+\
+Check UFW :				sudo systemctl status ufw\
+List rules :					sudo uff status\
+\
+Check SSH :				sudo systemctl status ssh\
+Check ports :				sudo grep Port /etc/ssh/ssh_config\
+Find IP :					hostname -I\
+Log with SSH :				ssh login@IP -p 4242\
+\
+Edit Cron :				sudo crontab -u root -e\
+Pause Cron :				sudo service cron stop\
+Resume Cron :				sudo service cron start}

@@ -1,0 +1,40 @@
+Tf is a Linux kernel: Linux itself isn't an operating system, it's a kernel and a kernel is part of an operating system, it's the base of it all and it's what handles the operations between software and hardware. It's basically a popcorn kernel that hasn't popped yet, still needs work to be edible but is the base of a tasty snack. Every OS has a kernel, like Windows and macOS. The Linux kernel is open source and can be used by anyone to develop their own OS, which then becomes a Linux distribution, like Debian that we're using for this project.
+
+
+Tf is requiretty/tty: tty stands for teletypewriter which is basically the terminal. Requiretty means that sudo must be ran from a logged-in terminal session. This allows sudo to not be used by detached processes like cronjobs or web server plugins. It also can't be run from an ssh call without setting up a terminal session.
+
+
+Tf is LVM?: LVM stands for Logical Volume Management. It's basically a partitioning tool like any OS has, except LVM has some nice advantages. LVM operations can be done while the system is running, whereas other tools require than the partitions being manipulated not be in use. It also allows to resize a partition while it is mounted if the filesystem supports it. Lvm can also resize partitions from anywhere on the volume group, a same partition doesn't have to share borders.
+
+
+Volume group: a volume group contains physical volumes, which are the hard drives and ssds physically present in a system, while logical volumes are the partitions created on the physical volumes, they hold a filesystem. Unlike partitions, logical volumes get names rather than numbers and they can span over more than one physical volume.
+
+
+Tf is kdump?: kdump is basically the black box of the linux kernel. If the whole kernel crashes it won't leave you stranded, it copies the kernel at the moment of the crash so that you're not left with nothing and you can understand what happened.
+
+
+Tf is SELinux?: Security-Enhanced Linux is a security architecture for Linux systems that allows admins to have more control over who can access the system or not.
+
+
+Tf is apparmor?: app armor is kind of a permission manager for your downloaded apps, will ask you if you're sure you want to install it and is configurable to determine what is allowed to go look and do what where.
+
+
+Tf is apt?: Advanced Package Tool is a collection of tools used to install update, remove and manage softwares. It's pretty simple to use.
+
+
+Tf is aptitude?: aptitude is basically apt but with an interface and more complex. IT has many more options than apt and allow to view installed packages and other neat stuff.
+
+
+Tf is SSH?: Secure Shell is a network protocol that enables secure remote connections between two systems. Can be used to connect to a server remotely. SSH transmits data over encrypted channels, security is very gud.
+
+
+Tf is UFW firewall?: Uncomplicated Firewall is an easy configuration tool for firewalls that's built in ubuntu distributions. It allows to configure your firewall with the command prompt.
+
+
+Tf is sudo?: sudo is an acronym for superuser or substitute user do. It's basically a way to use a command that needs super high autorisations without switching to an other user like root.
+
+
+Tf is cron?: cron is a job scheduling utility. The crond daemon enables it and runs in the background. It allows to run scheduled tasks with a given timer.
+
+
+Daemon: a daemon is any service process that is meant to run in the background to supervise the system and provide functionality to foreground processes.

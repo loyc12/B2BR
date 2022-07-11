@@ -1,0 +1,10 @@
+Disk = AHAkitty6?
+User = LOLcat123@
+Root = FUNNYpus4$
+
+Test = Owo1337###
+
+test is an user
+user42 us an usergroup
+
+hostname -I for ip
